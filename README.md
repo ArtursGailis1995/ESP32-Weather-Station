@@ -4,6 +4,10 @@ ESP32 based weather station with indoor/outdor readings, DHT22, BME280, MH-Z19B 
 This is a personal weather station based on ESP32 NodeMCU module (should work on ESP8266 too). 
 Outdoor data is collected from DHT22 sensor. Indoor data is collected from BME280 and MH-Z19B sensors. Data is displayed on 2004 LCD module and also sent over WiFi to home server where InfluxDB and Grafana is hosted.
 
+Warning:
+> This project requires advanced knowledge and home server with InfuxDB, Grafana set up, most of the time running on Linux!
+> If you are not familiar with such environements, you will have to modify my code and remove any references to InfluxDB and sending/storing the data!
+
 <img src="/images/Finished_product.jpg" alt="Finished weather station" width="650"/>
 
 ## Parts used for this project
@@ -57,17 +61,17 @@ const char* influxdb_database = ""; //InfluxDB database name, ex. "arduino"
 4) If you use Basic HTTP authentication in your InfluxDB setup, modify your code (add the Authorization line):
 
 ```
-//Send POST request to HTTP client
 client.print(String("POST ") +
-http + " HTTP/1.1\r\n" +
-"User-Agent: ESP32/0.1\r\n" +
-"Host: 192.168.1.10:8086\r\n" +
-"Authorization: Basic username:password (must be base64 encoded)\r\n" + 
-"Accept: */*\r\n" +
-"Content-Length: " + String(vaicajums.length()) + "\r\n" +
-"Content-Type: application/x-www-form-urlencoded\r\n" +
-"Connection: close\r\n\r\n" + vaicajums + "\r\n");
+  http + " HTTP/1.1\r\n" +
+  "User-Agent: ESP32/0.1\r\n" +
+  "Host: 192.168.1.10:8086\r\n" +
+  "Authorization: Basic username:password (must be base64 encoded)\r\n" + 
+  "Accept: */*\r\n" +
+  "Content-Length: " + String(vaicajums.length()) + "\r\n" +
+  "Content-Type: application/x-www-form-urlencoded\r\n" +
+  "Connection: close\r\n\r\n" + vaicajums + "\r\n");
 ```
+5) Choose ESP32 Dev Module in Arduino IDE, connect the module, choose proper COM port and upload the code!
 
 ## Libraries used for this project
 
