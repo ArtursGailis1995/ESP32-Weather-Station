@@ -6,20 +6,20 @@ Outdoor data is collected from DHT22 sensor. Indoor data is collected from BME28
 
 ## Parts used for this project
 
-ESP32 NodeMCU developement board
+ESP32 NodeMCU developement board<br/>
 <img src="/images/ESP32.jpg" alt="ESP32" width="350"/>
 
-BME280 temperature, humidity, atmospheric pressure sensor
+BME280 temperature, humidity, atmospheric pressure sensor<br/>
 <img src="/images/BME280.jpg" alt="BME280" width="350"/>
 
-DHT22 temperature and humidity  sensor
+DHT22 temperature and humidity  sensor<br/>
 <img src="/images/DHT22.jpg" alt="DHT22" width="350"/>
 
-MH-Z19B CO2 sensor
+MH-Z19B CO2 sensor<br/>
 <img src="/images/MH-Z19B.jpg" alt="MH-Z19B" width="350"/>
 
-2004 LCD module with 20 chars * 4 rows
+2004 LCD module with 20 chars * 4 rows<br/>
 <img src="/images/2004-LCD.jpg" alt="2004 LCD" width="350"/>
 
-I2C adapter for 2004 LCD module
+I2C adapter for 2004 LCD module<br/>
 <img src="/images/I2C-Adapter-LCD.jpg" alt="I2C adapter LCD" width="350"/>
