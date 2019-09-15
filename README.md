@@ -41,6 +41,34 @@ Junction box 145 x 190 x70 @ IP65<br/>
 * RJ45 crimp tool and 2x RJ45 Cat5e connectors to make cable for indoor->outdoor connection;
 * Electrical tape for extra covering some contacts.
 
+## Setup procedure
+1) Install ESP32 support for Arduino IDE. __Version 1.0.3 works for me__
+2) Install all required libraries.
+3) Edit __ESP32-Weather-Station.ino__ and specify your credentials:
+
+```
+const char* ssid = ""; //WiFi SSID, ex. myRouter-WiFiName
+const char* password = ""; //WiFi password, ex. mySecureRouterPassword123
+const char* influxdb_host = ""; //InfluxDB server IP address, ex. 192.168.1.10
+const int influxdb_port = ; //InfluxDB server port, ex. 8086
+const char* influxdb_database = ""; //InfluxDB database name, ex. "arduino"
+```
+
+4) If you use Basic HTTP authentication in your InfluxDB setup, modify your code (add the Authorization line):
+
+```
+//Send POST request to HTTP client
+client.print(String("POST ") +
+http + " HTTP/1.1\r\n" +
+"User-Agent: ESP32/0.1\r\n" +
+"Host: 192.168.1.10:8086\r\n" +
+"Authorization: Basic username:password (must be base64 encoded)\r\n" + 
+"Accept: */*\r\n" +
+"Content-Length: " + String(vaicajums.length()) + "\r\n" +
+"Content-Type: application/x-www-form-urlencoded\r\n" +
+"Connection: close\r\n\r\n" + vaicajums + "\r\n");
+```
+
 ## Libraries used for this project
 
 * [Adafruit BME280 Library](https://github.com/adafruit/Adafruit_BME280_Library) __Version 1.0.10 works for me__
