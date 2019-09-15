@@ -31,3 +31,19 @@ Junction box 145 x 190 x70 @ IP65<br/>
 
 2x RJ45 outlets (for connecting outdoor sensor to main indoor box)<br/>
 <img src="/images/RJ45.jpg" alt="Junction box" width="250"/>
+
+## Tools and stuff used for this project
+
+* Cheap Dremel-like drill/saw with accessories to cut holes for LCD, sensors and ports;
+* Punch tool for punching cables to RJ45 jacks;
+* Soldering iron for soldering the cables. I dont trust breadboards;
+* Heat shrink tubing and lighters to cover soldered wires;
+* RJ45 crimp tool and 2x RJ45 Cat5e connectors to make cable for indoor->outdoor connection;
+* Electrical tape for extra covering some contacts.
+
+## Libraries used for this project
+
+[Adafruit BME280 Library](https://github.com/adafruit/Adafruit_BME280_Library)
+[Adafruit Sensor](https://github.com/adafruit/Adafruit_Sensor)
+[Arduino LiquidCrystal I2C Library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
+[MH-Z19 CO2 Sensor Library](https://github.com/WifWaf/MH-Z19)
