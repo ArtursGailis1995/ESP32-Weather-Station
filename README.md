@@ -48,3 +48,4 @@ Junction box 145 x 190 x70 @ IP65<br/>
 * [Arduino LiquidCrystal I2C Library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 * [MH-Z19 CO2 Sensor Library](https://github.com/WifWaf/MH-Z19)
 * [DHT ESP Library](https://github.com/beegee-tokyo/DHTesp)
+* [ESP Software Serial](https://github.com/plerup/espsoftwareserial) __MUST USE 5.0.4 OR OLDER__
