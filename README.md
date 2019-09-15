@@ -1,46 +1,46 @@
 # ESP32-Weather-Station
-ESP32 based weather station with indoor/outdor readings, DHT22, BME280, MH-Z19B CO2 sensors and big LCD!
+ESP32 based weather station with indoor/outdoor readings, DHT22, BME280, MH-Z19B CO2 sensors and big LCD!
 
 This is a personal weather station based on ESP32 NodeMCU module (should work on ESP8266 too). 
-Outdoor data is collected from DHT22 sensor. Indoor data is collected from BME280 and MH-Z19B sensors. Data is displayed on 2004 LCD module and also sent over WiFi to home server where InfluxDB and Grafana is hosted.
+Outdoor data is collected from DHT22 sensor. Indoor data is collected from BME280 and MH-Z19B sensors. Data is displayed on 2004 LCD module and sent over WiFi to home server where InfluxDB and Grafana is hosted.
 
 Warning:
 > This project requires advanced knowledge and home server with InfuxDB, Grafana set up, most of the time running on Linux!
-> If you are not familiar with such environements, you will have to modify my code and remove any references to InfluxDB and sending/storing the data!
+> If you are not familiar with such environments, you will have to change my code and remove any references to InfluxDB and sending/storing the data!
 
 <img src="/images/Finished_product.jpg" alt="Finished weather station" width="650"/>
 
 ## Parts used for this project
 
-ESP32 NodeMCU developement board<br/>
+* ESP32 NodeMCU developement board<br/>
 <img src="/images/ESP32.jpg" alt="ESP32" width="250"/>
 
-BME280 temperature, humidity, atmospheric pressure sensor<br/>
+* BME280 temperature, humidity, atmospheric pressure sensor<br/>
 <img src="/images/BME280.jpg" alt="BME280" width="250"/>
 
-DHT22 temperature and humidity  sensor<br/>
+* DHT22 temperature and humidity  sensor<br/>
 <img src="/images/DHT22.jpg" alt="DHT22" width="250"/>
 
-MH-Z19B CO2 sensor<br/>
+* MH-Z19B CO2 sensor<br/>
 <img src="/images/MH-Z19B.jpg" alt="MH-Z19B" width="250"/>
 
-2004 LCD module with 20 chars * 4 rows<br/>
+* 2004 LCD module with 20 chars * 4 rows<br/>
 <img src="/images/2004-LCD.jpg" alt="2004 LCD" width="250"/>
 
-I2C adapter for 2004 LCD module<br/>
+* I2C adapter for 2004 LCD module<br/>
 <img src="/images/I2C-Adapter-LCD.jpg" alt="I2C adapter LCD" width="250"/>
 
-Junction box 145 x 190 x70 @ IP65<br/>
+* Junction box 145 x 190 x70 @ IP65<br/>
 <img src="/images/Project_box.jpg" alt="Junction box" width="250"/>
 
-2x RJ45 outlets (for connecting outdoor sensor to main indoor box)<br/>
+* 2x RJ45 outlets (for connecting outdoor sensor to main indoor box)<br/>
 <img src="/images/RJ45.jpg" alt="Junction box" width="250"/>
 
-## Tools and stuff used for this project
+## Tools used for this project
 
 * Cheap Dremel-like drill/saw with accessories to cut holes for LCD, sensors and ports;
 * Punch tool for punching cables to RJ45 jacks;
-* Soldering iron for soldering the cables. I dont trust breadboards;
+* Soldering iron for soldering the cables. I don't trust breadboards;
 * Heat shrink tubing and lighters to cover soldered wires;
 * RJ45 crimp tool and 2x RJ45 Cat5e connectors to make cable for indoor->outdoor connection;
 * Electrical tape for extra covering some contacts.
@@ -58,7 +58,7 @@ const int influxdb_port = ; //InfluxDB server port, ex. 8086
 const char* influxdb_database = ""; //InfluxDB database name, ex. "arduino"
 ```
 
-4) If you use Basic HTTP authentication in your InfluxDB setup, modify your code (add the Authorization line):
+4) If you use Basic HTTP authentication in your InfluxDB setup, change your code (add the Authorization line):
 
 ```
 client.print(String("POST ") +
