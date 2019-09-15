@@ -43,7 +43,7 @@ Junction box 145 x 190 x70 @ IP65<br/>
 
 ## Libraries used for this project
 
-[Adafruit BME280 Library](https://github.com/adafruit/Adafruit_BME280_Library)
-[Adafruit Sensor](https://github.com/adafruit/Adafruit_Sensor)
-[Arduino LiquidCrystal I2C Library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
-[MH-Z19 CO2 Sensor Library](https://github.com/WifWaf/MH-Z19)
+* [Adafruit BME280 Library](https://github.com/adafruit/Adafruit_BME280_Library)
+* [Adafruit Sensor](https://github.com/adafruit/Adafruit_Sensor)
+* [Arduino LiquidCrystal I2C Library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
+* [MH-Z19 CO2 Sensor Library](https://github.com/WifWaf/MH-Z19)
