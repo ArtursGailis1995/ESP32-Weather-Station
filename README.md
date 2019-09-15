@@ -25,3 +25,9 @@ MH-Z19B CO2 sensor<br/>
 
 I2C adapter for 2004 LCD module<br/>
 <img src="/images/I2C-Adapter-LCD.jpg" alt="I2C adapter LCD" width="250"/>
+
+Junction box 145 x 190 x70 @ IP65<br/>
+<img src="/images/Project_box.jpg" alt="Junction box" width="250"/>
+
+2x RJ45 outlets (for connecting outdoor sensor to main indoor box)<br/>
+<img src="/images/RJ45.jpg" alt="Junction box" width="250"/>
