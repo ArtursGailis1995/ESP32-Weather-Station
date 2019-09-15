@@ -47,3 +47,4 @@ Junction box 145 x 190 x70 @ IP65<br/>
 * [Adafruit Sensor](https://github.com/adafruit/Adafruit_Sensor)
 * [Arduino LiquidCrystal I2C Library](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 * [MH-Z19 CO2 Sensor Library](https://github.com/WifWaf/MH-Z19)
+* [DHT ESP Library](https://github.com/beegee-tokyo/DHTesp)
