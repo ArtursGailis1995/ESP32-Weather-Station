@@ -2,7 +2,7 @@
 ESP32 based weather station with indoor/outdoor readings, DHT22, BME280, MH-Z19B CO2 sensors and big LCD!
 
 This is a personal weather station based on ESP32 NodeMCU module (should work on ESP8266 too). 
-Outdoor data is collected from DHT22 sensor. Indoor data is collected from BME280 and MH-Z19B sensors. Data is displayed on 2004 LCD module and sent over WiFi to home server where InfluxDB and Grafana is hosted.
+Outdoor data are collected from DHT22 sensor. Indoor data are collected from BME280 and MH-Z19B sensors. Data is displayed on 2004 LCD module and sent over WiFi to home server where InfluxDB and Grafana are hosted.
 
 Warning:
 > This project requires advanced knowledge and home server with InfuxDB, Grafana set up, most of the time running on Linux!
@@ -30,7 +30,7 @@ Warning:
 * I2C adapter for 2004 LCD module<br/>
 <img src="/images/I2C-Adapter-LCD.jpg" alt="I2C adapter LCD" width="250"/>
 
-* Junction box 145 x 190 x70 @ IP65<br/>
+* Junction box 145 x 190 x 70 @ IP65<br/>
 <img src="/images/Project_box.jpg" alt="Junction box" width="250"/>
 
 * 2x RJ45 outlets (for connecting outdoor sensor to main indoor box)<br/>
